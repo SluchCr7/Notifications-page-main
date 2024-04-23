@@ -59,10 +59,10 @@ body{
 .title{
     color: #000;
     font-weight: var(--weight-bold);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .number{
-    background-color: var(--Blue);
+    background-color: var(--Very-dark-blue);
     padding: 5px 10px;
     font-size: 1rem;
     color: var(--White);
