@@ -40,6 +40,7 @@ body{
     margin: auto;
     height: 100%;
     padding: 20px;
+    margin-top: 70px;
 }
 .header{
     display: flex;
@@ -80,7 +81,7 @@ body{
 }
 .component{
     width: 100%;
-    background-color: var(--Light-grayish-blue-1);
+    background-color: var(--Very-light-grayish-blue);
     border-radius: 5px;
     display: flex;
     flex-direction: row;
