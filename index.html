@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Contnet" id="content">
+    <div class="header">
+      <div class="left_side">
+        <span class="title">Notifications</span>
+        <span class="number" id="number">3</span>
+      </div>
+      <div class="right_side">
+        <span id="read">Make As Read</span>
+      </div>
+    </div>
+    <div class="notifications">
+      <div class="component">
+        <img src="assets/images/avatar-mark-webber.webp" alt="">
+        <div class="details">
+          <div class="top_details">
+            <span class="name">mark webber</span>
+            <span>reacted to you recently post</span>
+            <span class="post">My first tournment today</span>
+            <div class="circle"></div>
+          </div>
+          <span class="time">1m Ago</span>
+        </div>
+      </div>
+      <div class="component">
+        <img src="assets/images/avatar-angela-gray.webp" alt="">
+        <div class="details">
+          <div class="top_details">
+            <span class="name">angela gray</span>
+            <span>followed you</span>
+            <!-- <span class="post">followed you</span> -->
+            <div class="circle"></div>
+          </div>
+          <span class="time">5m Ago</span>
+        </div>
+      </div>
+      <div class="component">
+        <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+        <div class="details">
+          <div class="top_details">
+            <span class="name">jacob thompson</span>
+            <span>has joined your Group</span>
+            <span class="post">Chess Club</span>
+            <div class="circle"></div>
+          </div>
+          <span class="time">1d Ago</span>
+        </div>
+      </div>
+      <div class="component active_post">
+        <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+        <div class="details">
+          <div class="top_details">
+            <span class="name">rizky hasanuddin</span>
+            <span>sent you a private message</span>
+            <!-- <span class="post">Chess Club</span> -->
+            <!-- <div class="circle"></div> -->
+          </div>
+          <span class="time">5d Ago</span>
+          <div class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            I'm already having lots of fun and improving my game.
+          </div>
+        </div>
+      </div>
+      <div class="component active_post_image">
+        <div class="left_side_comp">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+          <div class="details">
+            <div class="top_details">
+              <span class="name">kimberly smith</span>
+              <span>commented in your picture</span>
+              <!-- <span class="post">Chess Club</span> -->
+            </div>
+            <span class="time">1w Ago</span>
+          </div>
+        </div>
+        <div class="right_side_comp">
+          <img src="assets/images/image-chess.webp" alt="">
+        </div>
+      </div>
+      <div class="component">
+        <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+        <div class="details">
+          <div class="top_details">
+            <span class="name">nathan peterson</span>
+            <span>reacted to your recent post</span>
+            <span class="post">5 end-game strategies to increase your win rate</span>
+          </div>
+          <span class="time">2w Ago</span>
+        </div>
+      </div>
+      <div class="component">
+        <img src="assets/images/avatar-anna-kim.webp" alt="">
+        <div class="details">
+          <div class="top_details">
+            <span class="name">anna kim</span>
+            <span>left the Group</span>
+            <span class="post">Chess Club</span>
+          </div>
+          <span class="time">2w Ago</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="index.js"></script>
+</body>
+</html>

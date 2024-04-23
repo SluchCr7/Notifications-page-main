@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+    --weight-bold : 800;
+    --weight-light: 500;
+}
+html{
+    font-size: 16px;
+}
+@font-face{
+    font-family: my-font;
+    src: url(assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+body{
+    background-color: var(--Very-light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: my-font;
+    min-height: 100vh;
+}
+.Contnet{
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    background-color: var(--White);
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    padding: 20px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.left_side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.title{
+    color: #000;
+    font-weight: var(--weight-bold);
+    font-size: 1.2rem;
+}
+.number{
+    background-color: var(--Blue);
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: var(--White);
+    border-radius: 5px;
+}
+.right_side span{
+    color: var(--Blue);
+    font-weight: var(--weight-light);
+}
+.notifications{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.component{
+    width: 100%;
+    background-color: var(--Light-grayish-blue-1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 20px;
+    padding: 15px 20px;
+}
+.component img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.time{
+    color: var(--Grayish-blue);
+    font-size: .9rem;
+}
+.top_details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+}
+.name{
+    color: #000 !important;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: var(--weight-bold);
+}
+.top_details span{
+    color: var(--Grayish-blue);
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--Red);
+}
+.post{
+    color: #000 !important;
+    font-weight: var(--weight-bold);
+}
+.none{
+    display: none !important;
+}
+.message{
+    background-color: var(--Light-grayish-blue-1);
+    color: var(--Dark-grayish-blue);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    line-height: 2rem;
+    width: 90%;
+    font-weight: var(--weight-light);
+}
+.active_post{
+    background-color: var(--Very-light-grayish-blue) !important;
+}
+.right_side_comp img{
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 0 !important;
+}
+.active_post_image{
+    justify-content: space-between !important;
+    align-items: center !important;
+
+}
+.left_side_comp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 19px;
+}
+@media (max-width: 500px) {
+    .Contnet{
+        width: 100%;
+    }
+    .top_details{
+        display: inline-table !important;
+        position: relative;
+    }
+    .name{
+        padding-right: 5px !important;
+    }
+    .post{
+        padding-left: 5px !important;
+    }
+    .details{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: start !important;
+        gap: 8px;
+    }
+    .circle{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 991px) {
+    .Contnet{
+        width: 100%;
+    }
+    .top_details{
+        display: inline-table !important;
+        position: relative;
+    }
+    .name{
+        padding-right: 5px !important;
+    }
+    .post{
+        padding-left: 5px !important;
+    }
+    .details{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: start !important;
+        gap: 8px;
+    }
+    .circle{
+        position: absolute;
+        right: -15px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
